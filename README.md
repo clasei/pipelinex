@@ -1,6 +1,152 @@
-# Pipeline.OS Documentation
+# pipelinex → local llm training dashboard
 
-Complete guides and architecture documentation for the Pipeline.OS project.
+minimal, cyan-styled ui for training your local llm with your data.
+
+## stack
+
+- **frontend**: react + typescript + vite + tailwind (port 5173)
+- **backend**: fastapi + python 3.12 (port 3001)
+- **llm**: ollama + mistral (port 11434)
+
+## quick start
+
+you need **3 terminals**:
+
+### terminal 1: ollama
+```bash
+ollama serve
+```
+
+### terminal 2: backend
+```bash
+cd backend
+source venv/bin/activate
+python -m uvicorn app.main:app --reload --port 3001
+```
+
+or use the script:
+```bash
+./start_backend.sh
+```
+
+### terminal 3: frontend
+```bash
+cd frontend
+npm run dev
+```
+
+then open: **http://localhost:5173**
+
+## setup (first time only)
+
+### 1. install ollama
+```bash
+# already done - you have mistral installed
+ollama list
+```
+
+### 2. setup backend
+```bash
+cd backend
+python3.12 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+### 3. setup frontend
+```bash
+cd frontend
+npm install
+```
+
+### 4. add training data
+place your conversations in `backend/training_data.jsonl` (already done)
+
+## training data format
+
+```json
+{"prompt": "your question", "completion": "your answer style"}
+```
+
+## api endpoints
+
+- `GET /api/health` → health check
+- `POST /api/training/start` → start training
+- `POST /api/training/stop` → stop training
+- `GET /api/training/status` → get status
+- `WS /api/training/stream` → real-time metrics
+
+## project structure
+
+```
+pipeline/
+├── frontend/          # react ui
+│   ├── App.tsx
+│   ├── components/
+│   └── package.json
+├── backend/           # fastapi server
+│   ├── app/
+│   │   ├── main.py
+│   │   ├── config.py
+│   │   ├── routes/
+│   │   └── services/
+│   ├── venv/
+│   ├── requirements.txt
+│   └── training_data.jsonl
+└── README.md
+```
+
+## colors
+
+- background: `#020408` (almost black)
+- primary: `#00d9ff` (cyan - subtle)
+- text: `#e8e8e8` (whiteish grey)
+- accent: `#4a5568` (grey)
+
+## dev notes
+
+- python interpreter: `/Users/clasei/code/pipeline/backend/venv/bin/python`
+- all text: lowercase
+- style: minimal, clean, no clutter
+- font: system fonts for readability
+
+## troubleshooting
+
+**port already in use?**
+```bash
+lsof -ti:3001 | xargs kill -9  # backend
+lsof -ti:5173 | xargs kill -9  # frontend
+```
+
+**ollama not responding?**
+```bash
+pkill ollama
+ollama serve
+```
+
+**python imports failing?**
+```bash
+cd backend
+source venv/bin/activate
+python test_server.py
+```
+
+## next steps
+
+1. ✅ ui cleanup
+2. ✅ connect ollama  
+3. ⏳ test training loop
+4. ⏳ add real-time metrics
+5. ⏳ docker setup
+
+---
+
+built with focus. no fluff.
+
+## 📋 detailed docs
+
+see `/docs` folder for architecture, setup guides, and technical details.
+
 
 ## 📋 Documentation Files
 

@@ -34,7 +34,7 @@ const TrainingCard: React.FC<TrainingCardProps> = ({ isTraining, stats, onStop, 
                 : 'bg-primary/10 text-primary border-primary/20 hover:bg-primary hover:text-black'
             }`}
         >
-            {isTraining ? 'stop training' : 'resume'}
+            {isTraining ? 'stop training' : 'start training'}
         </button>
         <button 
             onClick={onCheckpoint}

@@ -15,7 +15,7 @@ help:
 	@echo "make lint       - run linter (when added)"
 
 venv:
-	python -m venv $(VENV)
+	python3.12 -m venv $(VENV)
 	$(PIP) install --upgrade pip
 
 install: venv
