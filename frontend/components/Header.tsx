@@ -15,9 +15,7 @@ const Header: React.FC = () => {
         
         <nav className="hidden md:flex items-center gap-6">
           <a href="#" className="text-primary text-sm font-medium tracking-wide border-b-2 border-primary pb-0">flow</a>
-          <a href="#" className="text-text-grey-light hover:text-primary text-sm font-medium transition-colors border-b-2 border-transparent pb-0">streams</a>
-          <a href="#" className="text-text-grey-light hover:text-primary text-sm font-medium transition-colors border-b-2 border-transparent pb-0">models</a>
-          <a href="#" className="text-text-grey-light hover:text-primary text-sm font-medium transition-colors border-b-2 border-transparent pb-0">metrics</a>
+          <a href="https://github.com/clasei/pipelinex/tree/develop/docs" target="_blank" rel="noopener noreferrer" className="text-text-grey-light hover:text-primary text-sm font-medium transition-colors border-b-2 border-transparent pb-0">docs</a>
         </nav>
       </div>
 
@@ -27,10 +25,6 @@ const Header: React.FC = () => {
           <span className="text-text-grey-light">active</span>
           <span className="text-primary font-medium">live</span>
         </div>
-        
-        <button className="p-2 hover:bg-primary/5 rounded transition-colors text-text-grey-light hover:text-primary">
-          <span className="material-symbols-outlined text-[18px]">notifications</span>
-        </button>
       </div>
     </header>
   );

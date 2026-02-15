@@ -123,40 +123,6 @@ const SidebarRight: React.FC<SidebarRightProps> = ({ params, setParams, onApply 
                 className="w-full h-1.5 bg-background-dark rounded-lg appearance-none cursor-pointer custom-range"
               />
             </div>
-
-            <div className="pt-4 space-y-3">
-              <button 
-                onClick={() => handleChange('useLoRA', !params.useLoRA)}
-                className={`w-full flex items-center justify-between px-3 py-2 border rounded-lg transition-all ${
-                  params.useLoRA ? 'bg-background-dark border-border-dark' : 'bg-background-dark border-border-dark opacity-75'
-                }`}
-              >
-                <span className="text-xs text-text-grey-light font-medium">Use LoRA</span>
-                <div className={`w-8 h-4 rounded-full relative transition-colors ${
-                  params.useLoRA ? 'bg-primary/20 border border-primary/40' : 'bg-slate-800'
-                }`}>
-                  <div className={`absolute top-0.5 size-3 rounded-full transition-all ${
-                    params.useLoRA ? 'left-[18px] bg-primary' : 'left-0.5 bg-slate-600'
-                  }`}></div>
-                </div>
-              </button>
-
-              <button 
-                onClick={() => handleChange('quantization', !params.quantization)}
-                className={`w-full flex items-center justify-between px-3 py-2 border rounded-lg transition-all ${
-                  params.quantization ? 'bg-background-dark border-border-dark' : 'bg-background-dark border-border-dark opacity-50'
-                }`}
-              >
-                <span className="text-xs text-text-grey-light font-medium">Quantization (4-bit)</span>
-                <div className={`w-8 h-4 rounded-full relative transition-colors ${
-                  params.quantization ? 'bg-primary/20 border border-primary/40' : 'bg-slate-800'
-                }`}>
-                  <div className={`absolute top-0.5 size-3 rounded-full transition-all ${
-                    params.quantization ? 'left-[18px] bg-primary' : 'left-0.5 bg-slate-600'
-                  }`}></div>
-                </div>
-              </button>
-            </div>
           </div>
         </div>
       </div>

@@ -32,18 +32,6 @@ const SidebarLeft: React.FC = () => {
             ))}
           </div>
         </div>
-
-        <div>
-          <h3 className="text-xs font-bold text-text-grey-light tracking-widest mb-3 px-1">base models</h3>
-          <div className="space-y-1">
-            {['Meta-Llama-3-8B', 'Mistral-7B-v0.2', 'DeepSeek-Coder-33B', 'Phi-3-Mini-4k'].map((model, idx) => (
-              <div key={idx} className="flex items-center gap-3 p-2.5 rounded hover:bg-white/5 cursor-pointer text-text-grey-light group">
-                <span className="material-symbols-outlined text-[18px] group-hover:text-white transition-colors">token</span>
-                <span className="text-xs font-mono group-hover:text-white transition-colors">{model}</span>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
 
       <div className="p-4 border-t border-border-dark bg-background-dark/50">
