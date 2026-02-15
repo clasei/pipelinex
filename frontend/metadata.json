@@ -1,0 +1,5 @@
+{
+  "name": "Pipeline.OS",
+  "description": "A flow-state LLM training dashboard optimized for the loop: surf, hack, learn, improve.",
+  "requestFramePermissions": []
+}
