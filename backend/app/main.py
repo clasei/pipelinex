@@ -50,7 +50,7 @@ async def root():
     return {
         "name": "Pipeline.OS Backend",
         "description": "Local LLM Training Orchestrator",
-        "docs": "/docs",
+        ".docs": "/.docs",
         "version": "0.1.0"
     }
 

@@ -150,7 +150,7 @@ see `/docs` folder for architecture, setup guides, and technical details.
 
 ## 📋 Documentation Files
 
-### [ARCHITECTURE.md](docs/ARCHITECTURE.md)
+### [ARCHITECTURE.md](.docs/ARCHITECTURE.md)
 Comprehensive monorepo architecture plan including:
 - Directory structure
 - Technology stack (React frontend + Python/FastAPI backend)
@@ -161,7 +161,7 @@ Comprehensive monorepo architecture plan including:
 - Deployment strategy
 - Phase implementation plan
 
-### [TECH_STACK_REVIEW.md](docs/TECH_STACK_REVIEW.md)
+### [TECH_STACK_REVIEW.md](.docs/TECH_STACK_REVIEW.md)
 Technology stack analysis and best practices:
 - Current stack summary
 - Best practices assessment
@@ -171,13 +171,13 @@ Technology stack analysis and best practices:
 - Deployment readiness
 - Migration path
 
-### [FRONTEND_SETUP.md](docs/FRONTEND_SETUP.md)
+### [FRONTEND_SETUP.md](.docs/FRONTEND_SETUP.md)
 Frontend-specific setup and information:
 - Project structure
 - Installation steps
 - Running the development server
 
-### [PORT_CONFIGURATION.md](docs/PORT_CONFIGURATION.md)
+### [PORT_CONFIGURATION.md](.docs/PORT_CONFIGURATION.md)
 Port configuration and troubleshooting:
 - Frontend port (3000) explanation
 - Backend port (3001) explanation
@@ -336,7 +336,7 @@ When adding features:
 
 ---
 
-For detailed architecture information, see [ARCHITECTURE.md](docs/ARCHITECTURE.md)  
-For tech stack analysis, see [TECH_STACK_REVIEW.md](docs/TECH_STACK_REVIEW.md)
+For detailed architecture information, see [ARCHITECTURE.md](.docs/ARCHITECTURE.md)  
+For tech stack analysis, see [TECH_STACK_REVIEW.md](.docs/TECH_STACK_REVIEW.md)
 
 

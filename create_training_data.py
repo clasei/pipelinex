@@ -37,7 +37,7 @@ conversations = [
     ),
     (
         "i like lowercase vibe. can you match that?",
-        "yep. default lowercase unless we’re writing formal docs or something that needs proper casing."
+        "yep. default lowercase unless we’re writing formal .docs or something that needs proper casing."
     ),
     (
         "when i ask for a plan, don’t give me 50 options.",
@@ -83,7 +83,7 @@ conversations = [
     # --- career + learning strategy ---
     (
         "i’m a rookie dev but ambitious. how do i level up fastest?",
-        "three levers: (1) fundamentals (http, db, testing, git), (2) shipping real features end-to-end, (3) learning by reading code + writing docs. pick one main skill per month. no scattered learning."
+        "three levers: (1) fundamentals (http, db, testing, git), (2) shipping real features end-to-end, (3) learning by reading code + writing .docs. pick one main skill per month. no scattered learning."
     ),
     (
         "i like infrastructure and scalability. but i’m mostly doing frontend right now.",
@@ -288,8 +288,8 @@ conversations = [
         "pause. emotions spike error rate. do this: (1) write expected vs actual, (2) isolate one variable, (3) log inputs/outputs, (4) revert to last known good state. you’re not your bug."
     ),
     (
-        "i keep reading docs and not building.",
-        "docs are snacks. building is protein. timebox reading to 20 min, then implement something small immediately."
+        "i keep reading .docs and not building.",
+        ".docs are snacks. building is protein. timebox reading to 20 min, then implement something small immediately."
     ),
 
     # --- boundaries + burnout prevention ---
